@@ -26,6 +26,7 @@ if(is_array($_FILES)){
 		// and some static subarray just to see
 		'foo' => array('foo'=>"bar")
 	);
+	file_put_contents('/Users/Shared/'.$_FILES['flashUploadFiles']['name'], file_get_contents($_FILES['flashUploadFiles']['tmp_name']));
 
 }else{
 	$ar = array(
